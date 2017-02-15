@@ -2,15 +2,33 @@
   "name": "strongroom",
   "version": "0.0.1",
   "description": "Simple & safe password manager",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "license": "MIT",
   "author": "Ricardo Matias <ricardo.matias0@gmail.com>",
-  "license": "ISC",
-  "devDependencies": {},
+  "repository": "ricardomatias/strongroom",
+  "engines": {
+    "node": ">=0.12"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "index.js",
+    "cli.js"
+  ],
+  "bin": {
+    "strongroom": "cli.js"
+  },
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "mocha": "^2.2.5"
+  },
   "dependencies": {
     "chalk": "^1.0.0",
+    "copy-paste": "^1.1.2",
+    "get-stdin": "^4.0.1",
+    "lockme": "^2.0.0",
+    "magicword": "^1.1.1",
+    "meow": "^3.1.0",
     "promptly": "^0.2.1"
   }
 }
